@@ -196,4 +196,22 @@ size(M(:,1:2:4)) # 3, 2
 size([]) # 0, 0
 length(M(1:3,2:1)) # M(1:3,2:1) devuelve un objeto vacío, por lo tanto length() devuelve un 0
 
+#### EJERCICIO 13 ####
 
+# a)
+zeros(20, 15))
+
+# b)
+ones(20, 15)
+
+# c)
+ones(20, 15) * 5
+
+# d)
+M = [zeros(20, 15); ones(20, 15)]
+
+# e)
+S = M([1 31 3:30 2 32:40],:)
+
+# f)
+M = [M(1:4, :); M(5:7, 1:3) [8 2 5; 7 0 1; 9 7 4] M(5:7, 7:15); M(8:40, :)]
