@@ -134,4 +134,38 @@ resultados
 # fix(n): fix (real (n)) + fix (imag (n)) * I
 # floor(n): floor (real (n)) + floor (imag (n)) * I
 
+#### EJERCICIO 11 ####
 
+# Caso 1) 2 > 0 y 6 > 0 => dado que floor y fix se comportan igual para los positivos, el resultado es 
+# el mismo, independientemente de la función que se utilice.
+mod(6, 2)
+6 - 2 * floor(6 / 2)
+rem(6, 2)
+6 - 2 * fix(6 / 2)
+
+# Caso 2) ídem caso 1
+mod(5, 2)
+rem(5, 2)
+
+# Casoo 3) 
+# A diferencia del los casos anteriores, el resultado de 5 / (-2) es un negativo, por lo que fix() y 
+# floor() se comportan distinto. Redondea hacia menos infinito: floor(5 / (-2)) = -3, mientra que fix()
+# redondea hacia cero: fix(5 / (-2)) = -2.
+# Luego entonces:
+#     5 - (-2) * floor(5 / (-2)) = 5 + 2 * (-3) = 5 - 6 = -1, mientras que
+#     5 - (-2) * fix(5 / (-2)) = 5 + 2 * (-2) = 5 - 4 = 1
+mod(5, -2)
+rem(5, -2)
+
+# Caso 4) Al igual que en el caso 3 los resultados cambian, pero ahora se invierte cuál es el resutlado
+# negativo y cual es el resultado positivo:
+#     -5 - 2 * floor(-5 / 2) = -5 - 2 * (-3) = -5 + 6 = 1
+#     -5 - 2 * fix(-5 / 2) = -5 - 2 * (-2) = -5 + 4 = -1
+mod(-5, 2)
+rem(-5, 2)
+
+# Caso 5): ídem caso 4
+#     -5 - (-2) * floor(-5 / (-2)) = -5 + 2 * (3) = -5 + 6 = 1
+#     -5 - (-2) * fix(-5 / (-2)) = -5 + 2 * (2) = -5 + 4 = -1
+mod(-5, -2)
+rem(-5, -2)
