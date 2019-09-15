@@ -1,4 +1,4 @@
-# comp1 ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+# comp1 ![experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 Prácticos Computación 1  
 FING - UdelaR  
 Edición 2019  
