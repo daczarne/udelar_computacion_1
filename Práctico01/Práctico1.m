@@ -169,3 +169,31 @@ rem(-5, 2)
 #     -5 - (-2) * fix(-5 / (-2)) = -5 + 2 * (2) = -5 + 4 = -1
 mod(-5, -2)
 rem(-5, -2)
+
+#### EJERCICIO 12 ####
+
+## Parte a ##
+M = [1:3; 4:6; 7:9; 10:12]
+v1 = [1:4]
+v2 = [1;2;3;4]
+
+[n, m] = size(M)
+tamano = size(M)
+fil = length(M)
+filas = size(M, 1)
+columnas = size(M, 2)
+l1 = length(v1)
+l2 = length(v2)
+
+## Parte b ##
+M = [4 0 2 1; 5 3 1 9; 1 0 0 1]
+size(M, 2) # cantidad de columnas de M: 4
+size(M', 2) # cantidad de columnas de M': 3
+size(M(2,2:3)) # cantidad de filas y cantidad de columnas de la submatriz M(2, 2:3): 1, 2
+length(M(1:3,2)) # largo de la submatriz (vector) M(1:3, 2): 3
+length(M(1:3,2:2)) # 3
+size(M(:,1:2:4)) # 3, 2
+size([]) # 0, 0
+length(M(1:3,2:1)) # M(1:3,2:1) devuelve un objeto vacío, por lo tanto length() devuelve un 0
+
+
