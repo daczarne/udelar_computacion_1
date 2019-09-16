@@ -69,6 +69,37 @@ disp(mensaje)
 
 #### EJERCICIO 3 ####
 
+### Caso a)
+x = 1;
+y = 2;
+z = 3;
+w = 0;
+if x > y % FALSE
+  if y > z
+    if x > z
+      w = x;
+    else
+      w = y;
+    end
+  else
+    w = z;
+  end
+end
+disp(w) % w = 0
+
+### Caso b)
+a = 0;
+b = -1;
+if a > 0 % FALSE: ir al else
+  z = 'A';
+else
+  if b < 0 % TRUE
+    z = 'B'; % Asignar z = "B"
+  else
+    z = 'C';
+  end
+end
+disp(z) % z = "B"
 
 #### EJERCICIO 4 ####
 
