@@ -102,8 +102,12 @@ end
 disp(z) % z = "B"
 
 #### EJERCICIO 4 ####
-
-
+a = 3;
+b = 2;
+c = 1;
+if a > b && a > c
+  disp("A es el grande");
+endif
 
 #### EJERCICIO 5 ####
 
