@@ -4,6 +4,71 @@
 
 #### EJERCICIO 1 ####
 
+### Forma 1: elseif ###
+Mes = 1;
+if Mes == 1
+  y = "Mes de enero";
+elseif Mes == 2
+  y = "Mes de febrero";
+elseif Mes == 3
+  y = "Mes de marzo";
+endif
+disp(y)
+
+### Forma 1: switch-case ###
+Mes = 3;
+switch(Mes)
+case 1
+  y = "Mes de enero";
+case 2
+  y = "Mes de febrero";
+case 3
+  y = "Mes de marzo";
+endswitch
+disp(y)
+
+#### EJERCICIO 2 ####
+
+
+
+#### EJERCICIO 3 ####
+
+
+#### EJERCICIO 4 ####
+
+
+
+#### EJERCICIO 5 ####
+
+#### EJERCICIO 6 ####
+
+#### EJERCICIO 7 ####
+
+#### EJERCICIO 8 ####
+
+#### EJERCICIO 9 ####
+
+#### EJERCICIO 10 ####
+
+#### EJERCICIO 11 ####
+
+#### EJERCICIO 12 ####
+
+#### EJERCICIO 13 ####
+
+#### EJERCICIO 14 ####
+
+#### EJERCICIO 15 ####
+
+#### EJERCICIO 16 ####
+
+#### EJERCICIO 17 ####
+
+
+
+
+#### EJERCICIO 1 ####
+
 Mes = 1
 
 # opción 1 (usando elseif)
