@@ -29,7 +29,43 @@ disp(y)
 
 #### EJERCICIO 2 ####
 
+### Caso a ###
+puntaje = 50;
+minimo = 50;
+if puntaje >= minimo
+  y = "Ud. ha sido aceptado.";
+else
+  y = "Ud. ha sido rechazado.";
+endif
+disp(y)
 
+### Caso b ###
+horas_trabajadas = 45;
+paga = 10;
+paga_extra = 1;
+if horas_trabajadas > 40
+  paga = paga + paga_extra * (horas_trabajadas - 40);
+endif
+disp(paga)
+
+### Caso c ###
+a = 1;
+b = 2;
+c = 3;
+if (b^2 - 4 * a * c) < 0
+  mensaje = "Las raices son imaginarias";
+endif
+disp(mensaje)
+
+### Caso d ###
+seccion_de_cruce = 40;
+minimo = 30;
+if seccion_de_cruce > minimo
+  mensaje = "Ajustar para cortar 4x8";
+else
+  mensaje = "Ajustar para cortar 2x4";
+endif
+disp(mensaje)
 
 #### EJERCICIO 3 ####
 
