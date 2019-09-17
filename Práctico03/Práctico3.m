@@ -219,6 +219,31 @@ for k = alto:-1:3
 endfor
 
 #### EJERCICIO 8 ####
+for i = 1:100
+  if mod(i, 3) == 0 && mod(i, 5) == 0
+    disp("OSCAR y MAGGIOLO");
+  elseif mod(i, 3) == 0
+    disp("OSCAR");
+  elseif mod(i, 5) == 0
+    disp("MAGGIOLO");
+  else
+    disp(i);
+  endif
+endfor
+
+for i = 1:100
+  if mod(i, 3) == 0 
+    if mod(i, 5) == 0
+      disp("OSCAR y MAGGIOLO");
+    else
+      disp("OSCAR");
+    endif
+  elseif mod(i, 5) == 0
+    disp("MAGGIOLO");
+  else
+    disp(i);
+  endif
+endfor
 
 #### EJERCICIO 9 ####
 
@@ -241,70 +266,7 @@ endfor
 
 
 
-#### EJERCICIO 1 ####
 
-Mes = 1
-
-# opción 1 (usando elseif)
-if Mes == 1
-  y = "Enero";
-elseif Mes == 2
-  y = "Febrero";
-elseif Mes == 3
-  y = "Marzo";
-end
-disp(y)
-
-# Opción 2 (usando switch case)
-switch Mes
-  case{1}
-  y="Enero";
-  case{2}
-  y="Febrero";
-  case{3}
-  y="Marzo";
-end
-disp(y)
-
-#### EJERCICIO 2 ####
-
-# a)
-puntaje = 4
-umbral = 5
-
-if puntaje >= umbral
-  y="pa'dentro";
-else
-  y="pa'juera";
-end
-disp(y)
-
-# b)
-horas = 50
-sal_por_hora = 15
-
-if horas > 40
-  extra = (horas - 40)*sal_por_hora*1.5;
-  sueldo = 40 * sal_por_hora + extra;
-end
-disp(sueldo)
-
-# c)
-a=1
-b=0
-c=0
-if b^2-4*a*c < 0
-  disp("las raices son imaginarias")
-end
-
-# d)
-seccion_de_cruce = 1
-umbral = 2
-if seccion_de_cruce > umbral
-  disp("usar 4x8");
-else
-  disp("usar 2x4");
-end
 
 #### EJERCICO 5 ####
 
@@ -314,15 +276,11 @@ x = 0.5
 s = [1:1:size(X)(1)]
 w = zeros(1, size(X)(1))
 for i = 1:size(X)(1)
-  if (x(1) >= X(i,1)) & ( x(1) <= X(i,2))
+  if (x(1) >= X(i,1)) & (x(1) <= X(i,2))
     w(i) = 1;
   end
 end
-s = s(s*diag(w) ~= 0)
-
-#### EJERCICO 6 ####
-
-
+s = s(s * diag(w) ~= 0)
 
 #### EJERCICO 17 ####
 
