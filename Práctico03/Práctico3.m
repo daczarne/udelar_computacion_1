@@ -247,15 +247,114 @@ endfor
 
 #### EJERCICIO 9 ####
 
+# El porgrama suma todos los números entre el 1 y el 1000. Dado que sabemos dónde arranca y cuándo termina, la
+# estructura de control adecuada es un for, no un while.
+suma = 0;
+for cont = 1:1000
+  suma = suma + cont;
+endfor
+
 #### EJERCICIO 10 ####
 
 #### EJERCICIO 11 ####
 
+### Parte a) disp(v) = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+n = 11;
+numero = 1;
+v = [];
+suma = 0;
+while numero < n & suma < 1000
+  numero = numero + 1;
+  v = [v, numero];
+  suma = suma + numero;
+endwhile
+disp(v)
+
+### Parte b)
+n = 11;
+numero = 1;
+v = [];
+suma = 0;
+while numero < n & suma < 1000
+  v = [v, numero];
+  numero = numero + 1;
+  suma = suma + numero;
+endwhile
+disp(v)
+
 #### EJERCICIO 12 ####
+
+hecho = 0;
+while ~hecho
+  hecho = hacer_algo();
+endwhile
 
 #### EJERCICIO 13 ####
 
+### Parte a)
+v = [];
+target = 1;
+counter = 0;
+for i = 1:length(v)
+  if i == target;
+    counter = counter + 1;
+  endif
+endfor
+disp(counter)
+
+## Parte b)
+v = [];
+minimo = v(1);
+for i = 2:length(v)
+  if v(i) < minimo
+    minimo = v(i);
+  endif
+endfor
+disp(minimo)
+
+### Parte c)
+v = 1:2:30;
+pares = 0;
+suma = 0;
+i = 1;
+while pares <= 10 && i <= length(v)
+  if mod(v(i), 2) == 0
+    pares = pares + 1;
+    suma = suma + v(i);
+  endif
+  if i >= length(v)
+    disp('El vector no tiene 10 números pares. Se imprime la suma de todos los pares hallados.');
+  endif
+  i = i + 1;
+endwhile
+disp(pares);
+disp(suma)
+
+### Parte d)
+i = 1;
+n = length(v);
+minimo = v(1);
+flag = 0;
+while i <= n && ~(flag)
+  if v(i) == 0
+    flag = 1;
+    minimo = 0;
+  elseif v(i) < minimo
+    minimo = v(i);
+  endif
+  i = i + 1;
+endwhile
+disp(minimo)
+
 #### EJERCICIO 14 ####
+
+peso = [15, 30, 31, 60, 62, 100];
+if peso <= 30
+  costo = 22;
+else
+  costo = 22 + ceil((peso - 30) / 30) * 17;
+endif
+disp(costo)
 
 #### EJERCICIO 15 ####
 
