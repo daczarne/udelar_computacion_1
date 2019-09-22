@@ -360,41 +360,28 @@ disp(costo)
 
 #### EJERCICIO 16 ####
 
+# No hay nada que esté mal dado que las dos i son distintas. El índice del for loop se declara al pricipio y no
+# puede ser modificado. La otra variable i no hace nada.
+a = 1;
+ppar = 1;
+for i = 1:8
+  if i / 2 == round(i / 2)
+    a = a + 1;
+  else
+    j = j + a;
+  endif
+  ppar = ppar * a;
+endfor
+
 #### EJERCICIO 17 ####
-
-
-
-
-
-
-#### EJERCICO 5 ####
-
-X = [-1, 1; 5, 7; 0, 1; 3, 6]
-x = 0.5
-#x = [2, 3, 0.5, 5.7, -4, 6]
-s = [1:1:size(X)(1)]
-w = zeros(1, size(X)(1))
-for i = 1:size(X)(1)
-  if (x(1) >= X(i,1)) & (x(1) <= X(i,2))
-    w(i) = 1;
-  end
-end
-s = s(s * diag(w) ~= 0)
-
-#### EJERCICO 17 ####
 
 n = 5
 res = n
 i = 1
 while i <= (n-1)
   res = res * i;
-  i = i + 1
+  i = i + 1;
 end
-#
-
-
-
-
 
 ################################
 #### FIN DE LA PROGRAMACIÓN ####
