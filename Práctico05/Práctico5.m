@@ -24,21 +24,3 @@ function resu = SumaRestDig(v)
   endfor
   resu = sumaimpares - sumapares;
 endfunction
-
-#### EJERCICIO 8 ####
-
-function bin = octabin(v)
-  dec = v(1);
-  for i = 2:length(v)
-    dec = dec * 8 + v(i);
-  endfor
-  cociente = dec;
-  bin = [];
-  resto = 0;
-  while cociente >= 2
-    cociente = floor(cociente/2);
-    resto = mod(cociente, 2);
-    bin = [resto, bin];
-  endwhile
-  bin = [bin, cociente];
-endfunction
