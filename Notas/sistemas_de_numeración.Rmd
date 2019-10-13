@@ -67,18 +67,43 @@ i. El número buscado es el resultado de concatenar el último cociente, el últ
 
 ## De decimal a binario
 
+i. Identificar la mayor potencia de $2$ que cabe en el número y colocar un $1$ en la posición de dicha potencia de $2$.
+
+i. Restar la potencia de $2$ al número en base $10$
+
+i. Repetir el procedimiento comparando a cada paso el resultado de la resta contra la siguiente (anterior) potencia de $2$, colocando un $1$ cuando cabe y un $0$ cunaod no cabe en el resultado del paso anterior, hasta llegar a $2^0$.
+
+$$\begin{array}{lcl}
+N_{10} - 2^r = R_r & \text{luego} & n_r = \text{I}_{ \{R_r \geq 0\} } \\
+R_r - 2^{r-1} = R_{r-1} & \text{luego} & n_{r-1} = \text{I}_{ \{R_{r-1} \geq 0\} } \\
+\,\,\,\,\,\,\,\,\,\, \vdots \\
+R_{r+s} - 2^{0} = R_{r+s+1} & \text{luego} & n_{r+s+1} = \text{I}_{ \{R_{r+s+1} \geq 0\} } \\
+\end{array}$$
 
 ## De binario a octal
 
+i. Dividir en grupos de $3$ bits a partir del únto binario
+
+i. Asignar a cada grupo el símbolo octal correspondiente
+
+i. Concatenar los resultados
 
 ## De octal a binario
 
+i. Convertir cada símbolo octal a $3$ bits binarios
+
+i. Concatenar los resultados
 
 ## De binario a hexadecimal
 
+i. Dividir el número hexadecimal en grupos de $4$ bits
+
+i. Asignar a cada grupo el símbolo hexadecimal correspondiente
+
+i. Concatenar los resultados
 
 ## De hexadecimal a binario
 
+i. Convertir cada símbolo hexadecimal a $4$ dígitos binarios
 
-
-
+i. Concatenar los resultados
