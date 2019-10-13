@@ -1,0 +1,84 @@
+---
+title: "Sistemas de numeración"
+author: "Daniel Czarnievicz"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Sistemas de numeración
+
+## Sistema decimal
+
+- Las cifras se nombran de la forma: $N \equiv n_r \, n_{r-1} \, \ldots n_3 \, n_2 \, n_1 \, n_0$ con $n_i \in \{0, \, 1, \, 2, \, 3, \, 4, \, 5, \, 6, \, 7, \, 8, \, 9 \}$
+
+- Representan al número en base 10: $N = \sum\limits_{i = 0}^{r} n_i \cdot 10^{i}$
+
+## Sistema binario
+
+- Las cifras se nombran de la forma: $B \equiv b_r \, b_{r-1} \, \ldots b_3 \, b_2 \, b_1 \, b_0$ con $b_i \in \{0, \, 1 \}$
+
+- Representan al número en base 10: $B = \sum\limits_{i = 0}^{r} b_i \cdot 2^{i}$
+
+## Sistema octal
+
+- Las cifras se nombran de la forma: $O \equiv o_r \, o_{r-1} \, \ldots o_3 \, o_2 \, o_1 \, o_0$ con $o_i \in \{0, \, 1, \, 2, \, 3, \, 4, \, 5, \, 6, \, 7 \}$
+
+- Representan al número en base 10: $O = \sum\limits_{i = 0}^{r} o_i \cdot 8^{i}$
+
+## Sistema hexadecimal
+
+- Las cifras se nombran de la forma: $H \equiv h_r \, h_{r-1} \, \ldots h_3 \, h_2 \, h_1 \, h_0$ con $h_i \in \{0, \, 1, \, 2, \, 3, \, 4, \, 5, \, 6, \, 7, \, 8, \, 9, \, A, \, B, \, C, \, D, \, E, \, F \}$ donde $A = 10$, $B = 11$, $C = 12$, $D = 13$, $E = 14$, y $F = 15$
+
+- Representan al número en base 10: $H = \sum\limits_{i = 0}^{r} h_i \cdot 16^{i}$
+
+# Cambio de base
+
+## De base $b$ a decimal
+
+i. Inicializar el resultado con el primer dígito siginificativo del número a transformar, expresado en base $b$.
+
+i. Hasta que no queden cifras:  
+   
+   + Multiplicar el resultado por $b$
+   
+   + Sumarle la siguiente cifra
+
+$$\begin{array}{l}
+\text{res} = b_r \\
+\text{res} = \text{res} \cdot b + b_{r-1} \\
+\,\,\,\,\,\,\,\,\,\, \vdots \\
+\text{res} = \text{res} \cdot b + b_{2} \\
+\text{res} = \text{res} \cdot b + b_{1} \\
+\text{res} = \text{res} \cdot b + b_{0}
+\end{array}$$
+
+## De decimal a base $b$
+
+i. Se divide el número entre $b$ y se toma el resto
+
+i. Se vuelve a dividir el cociente obtenido en la división anterior entre $b$ y se toma el resto
+
+i. Se repite hasta que el cociente resultante sea menor que $b$
+
+i. El número buscado es el resultado de concatenar el último cociente, el último resto, el pen-último resto, el ante-pen-último resto, ...
+
+## De decimal a binario
+
+
+## De binario a octal
+
+
+## De octal a binario
+
+
+## De binario a hexadecimal
+
+
+## De hexadecimal a binario
+
+
+
+
