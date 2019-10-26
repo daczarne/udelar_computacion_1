@@ -8,18 +8,18 @@ minimo = 50
 y = "Ud. ha sido rechazado"
 if puntaje >= minimo:
     y = "Ud. ha sido aceptado"
-print(y)
+print(f"y: {y}")
 
 # Opción ii)
 if puntaje >= minimo:
     y = "Ud. ha sido aceptado"
 else:
     y = "Ud. ha sido rechazado"
-print(y)
+print(f"y: {y}")
 
 # Opción iii)
 y = "Ud. ha sido aceptado" if puntaje >= minimo else "Ud. ha sido rechazado"
-print(y)
+print(f"y: {y}")
 
 ### Parte b ###
 horas_trabajas = 45
@@ -48,17 +48,17 @@ if delta < 0:
     mensaje = "Raices imaginarias"
 else:
     mensaje = "Raices reales"
-print(mensaje)
+print(f"mensaje: {mensaje}")
 
 # opción ii)
 mensaje = "Raices reales"
 if delta < 0:
     mensaje = "Raices imaginarias"
-print(mensaje)
+print(f"mensaje: {mensaje}")
 
 # opcion iii)
 mensaje = "Raices imaginarias" if delta < 0 else "Raices reales"
-print(mensaje)
+print(f"mensaje: {mensaje}")
 
 ### Parte d ###
 seccion_de_cruce = 40
@@ -69,14 +69,14 @@ if seccion_de_cruce > umbral:
     mensaje = "Cortar 4x8"
 else:
     mensaje = "Cortar 2x4"
-print(mensaje)
+print(f"mensaje: {mensaje}")
 
 # opcion i)
 mensaje = "Cortar 2x4"
 if seccion_de_cruce > umbral:
     mensaje = "Cortar 4x8"
-print(mensaje)
+print(f"mensaje: {mensaje}")
 
 # opcion i)
 mensaje = "Cortar 4x8" if seccion_de_cruce > umbral else "Cortar 2x4"
-print(mensaje)
+print(f"mensaje: {mensaje}")
