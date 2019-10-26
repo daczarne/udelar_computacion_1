@@ -7,4 +7,4 @@ elif Mes == 2:
     y = "Mes de Febrero"
 elif Mes == 3:
     y = "Mes de Marzo"
-print(y)
+print(f"y: {y}")
