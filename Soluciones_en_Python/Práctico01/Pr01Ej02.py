@@ -11,6 +11,6 @@ b = a
 c = np.array([[2], [3], [4]])
 print(f"c: {c}")
 
-# Tamaño de las variables
-print(f"a: {len(a)}")
-print(f"c: {len(c)}")
+# Para obtener el tamaño de los vecotres, llamamos al método shape
+print(f"a: {a.shape}")
+print(f"c: {c.shape}")
