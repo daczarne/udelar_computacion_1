@@ -13,7 +13,7 @@ if x > y:
             w = y
     else:
         w = z
-print(w)
+print(f"w: {w}")
 
 ### Parte b ###
 a = 0
@@ -25,4 +25,4 @@ else:
         z = "B"
     else:
         z = "C"
-print(z)
+print(f"z: {z}")
