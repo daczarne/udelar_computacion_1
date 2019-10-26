@@ -16,6 +16,7 @@ Edición 2019
 [Práctico 8](https://github.com/daczarne/comp1/blob/master/Práctico05/Soluciones_en_Octave/Práctico08)  
 [Práctico 9](https://github.com/daczarne/comp1/blob/master/Práctico05/Soluciones_en_Octave/Práctico09)  
 
+<!--
 ## Prácticos en Python
 
 [Práctico 1 - Introducción](https://github.com/daczarne/comp1/blob/master/Soluciones_en_Python/Práctico01)  
@@ -27,4 +28,4 @@ Edición 2019
 [Práctico 7](https://github.com/daczarne/comp1/blob/master/Práctico05/Soluciones_en_Python/Práctico07)  
 [Práctico 8](https://github.com/daczarne/comp1/blob/master/Práctico05/Soluciones_en_Python/Práctico08)  
 [Práctico 9](https://github.com/daczarne/comp1/blob/master/Práctico05/Soluciones_en_Python/Práctico09)  
-
+-->
