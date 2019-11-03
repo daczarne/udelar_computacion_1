@@ -1,8 +1,8 @@
 #### binarioADecimal ####
 
-function d = binarioADecimal(B)
-  d = B(1);
+function d = binarioADecimal(b)
+  d = b(1);
   for i = 2:length(B)
-    d = d * 2 + B(i)
+    d = d * 2 + b(i)
   endfor  
 endfunction
