@@ -1,12 +1,13 @@
 #### c1ADecimal ####
 
 function d = c1ADecimal(b)
-  
+  # Números positivos
   if b(1) == 0
     d = b(1);
     for i = 2:length(b)
       d = d * 2 + b(i);
     endfor
+  # Números negativos
   else if b(1) == 1
     for i = 1:length(b)
       if b(i) == 0
