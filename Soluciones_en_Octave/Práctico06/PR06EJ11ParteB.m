@@ -9,6 +9,7 @@ function d = c1ADecimal(b)
     endfor
   # Números negativos
   else if b(1) == 1
+    # Invierte bits
     for i = 1:length(b)
       if b(i) == 0
         b(i) = 1;
@@ -16,6 +17,7 @@ function d = c1ADecimal(b)
         b(i) = 0;
       endif
     endfor
+    # Transforma el número
     d = b(1);
     for i = 2:length(b)
       d = d * 2 + b(i);
