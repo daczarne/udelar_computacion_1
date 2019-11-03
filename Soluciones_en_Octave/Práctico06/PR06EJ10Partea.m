@@ -1,7 +1,7 @@
 #### SumaBinaria ####
 
-function s = SumaBinaria(a, b)
-  s = [];
+function out = SumaBinaria(a, b)
+  out = [];
   carry = 0;
   
   for i = length(a):-1:1
