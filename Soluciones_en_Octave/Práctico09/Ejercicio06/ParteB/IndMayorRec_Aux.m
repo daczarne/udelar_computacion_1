@@ -4,12 +4,12 @@
 
 function i = IndMayorRec_Aux(v, c)
   n = length(v);
-  if n == 1
+  if n == c
     i = c;
   else
-    i = IndMayorRec_Aux(v(2:n), c + 1);
-    if v(i - c) <= v(1)
-      i = c + 1;
+    i = IndMayorRec_Aux(v, c + 1);
+    if v(c) >= v(i)
+      i = c;
     endif
   endif
 endfunction

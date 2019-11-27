@@ -3,5 +3,5 @@
 # IndMayorRec
 
 function i = IndMayorRec(v)
-  i = IndMayorRec_Aux(v, 0);
+  i = IndMayorRec_Aux(v, 1);
 endfunction
