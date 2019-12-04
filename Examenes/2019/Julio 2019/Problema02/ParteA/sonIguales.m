@@ -3,16 +3,16 @@
 function out = sonIguales(v, w)
   n = length(v);
   m = length(w);
-  if n == w
+  if n == m
     out = 1;
+    i = 1;
+    while out && i <= n
+      if v(i) ~= w(i)
+        out = 0;
+      endif
+      i = i + 1;
+    endwhile
   else
     out = 0;
   endif
-  i = 1;
-  while out && i <= n
-    if v(i) ~= w(i)
-      out = 0;
-    endif
-    i = i + 1;
-  endwhile
 endfunction
