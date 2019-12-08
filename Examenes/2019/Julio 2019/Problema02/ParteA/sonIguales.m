@@ -10,7 +10,7 @@ function out = sonIguales(v, w)
       if v(i) ~= w(i)
         out = 0;
       endif
-      i = i + 1;
+      i ++;
     endwhile
   else
     out = 0;
