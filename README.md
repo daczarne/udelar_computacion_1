@@ -1,6 +1,6 @@
 # Computación 1  
 
-![experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
+![archived](https://img.shields.io/badge/lifecycle-archived-red.svg)
 
 Prácticos Computación 1  
 FING - UdelaR  
