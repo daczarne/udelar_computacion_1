@@ -1,6 +1,8 @@
 # Computación 1  
 
-![archived](https://img.shields.io/badge/lifecycle-archived-red.svg)
+![archived](https://img.shields.io/badge/lifecycle-archived-red.svg)  
+![languages](https://img.shields.io/github/languages/count/daczarne/comp1)   
+![top language](https://img.shields.io/github/languages/top/daczarne/comp1)   
 
 Prácticos Computación 1  
 FING - UdelaR  
