@@ -1,2 +1,3 @@
 *.m linguist-language=MATLAB
 *.md linguist-detectable
+*.md linguist-documentation=false
