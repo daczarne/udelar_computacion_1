@@ -1,2 +1,2 @@
-*.m linguist-language=Octave
+*.m linguist-language=MATLAB
 *.md linguist-detectable
